@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Cinemood - HD Movie Downloads | Bengali Movies, Dual Audio & Web Series</title>
+    <meta name="description" content="Cinemood is a premium movie indexing and metadata catalog. Direct Gofile download mirrors, Bangla dubbed series, anime sagas, and dual-audio blockbusters instantly." />
+    
+    <script>
+      // Prevent pinch zoom and gesture zoom on mobile devices
+      document.addEventListener('gesturestart', function(e) {
+        e.preventDefault();
+      });
+      document.addEventListener('gesturechange', function(e) {
+        e.preventDefault();
+      });
+      document.addEventListener('gestureend', function(e) {
+        e.preventDefault();
+      });
+      
+      // Prevent multi-touch pinch zoom
+      document.addEventListener('touchstart', function(e) {
+        if (e.touches && e.touches.length > 1) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+
+      // Prevent double-tap zoom
+      var lastTouchEnd = 0;
+      document.addEventListener('touchend', function(e) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+          // Allow default for buttons/inputs if needed, but prevent double-tap zoom
+          var target = e.target;
+          if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.tagName === 'BUTTON')) {
+            // let default happen
+          } else {
+            e.preventDefault();
+          }
+        }
+        lastTouchEnd = now;
+      }, false);
+    </script>
+    
+    <script>
+      // Gracefully capture any cross-origin script-level failures (such as blocked ad networks or tracking scripts)
+      // and suppress "Script error." or failed external telemetry script logs so they do not taint the app environment.
+      window.addEventListener('error', function(event) {
+        if (event.message === "Script error." || (event.filename && !event.filename.includes(window.location.host))) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+      
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && event.reason.stack && !event.reason.stack.includes(window.location.host)) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+    </script>
+    
+    <!-- Preconnect to high stakes external CDNs for speed optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://i.ibb.co.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+
+    <!-- Favicon and App Icon configuration -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Mobile Web App Integration -->
+    <meta name="theme-color" content="#e50914" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Cinemood" />
+    <meta name="google-site-verification" content="43Ugp6iUvljICVEtH_L6odbQqZHGEjbN2-XoW4pVaTs" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3D0DK1LDC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B3D0DK1LDC');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
