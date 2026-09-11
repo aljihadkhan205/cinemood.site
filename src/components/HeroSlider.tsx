@@ -30,6 +30,11 @@ export const HeroSlider: React.FC = () => {
 
   const currentMovie = featuredMovies[currentIndex];
 
+  const bannerTitle =
+    currentMovie.id === "vishwanath-sons-2026" || currentMovie.title.startsWith("Vishwanath & Sons (2026)")
+      ? "Vishwanath & Sons (2026)"
+      : currentMovie.title;
+
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + featuredMovies.length) % featuredMovies.length);
   };
@@ -92,7 +97,7 @@ export const HeroSlider: React.FC = () => {
 
               {/* Title */}
               <h1 className="text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-md">
-                {currentMovie.title}
+                {bannerTitle}
               </h1>
 
               {/* Storyline / Tagline */}
