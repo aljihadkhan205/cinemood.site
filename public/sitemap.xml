@@ -785,6 +785,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://cinemood.site/movie/oppam-2016</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
   <!-- Movie Download Mirror Indexes -->
   <url>
@@ -1425,6 +1431,12 @@
   </url>
   <url>
     <loc>https://cinemood.site/download/vishwanath-sons-2026</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cinemood.site/download/oppam-2016</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
