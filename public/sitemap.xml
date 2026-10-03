@@ -917,6 +917,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://cinemood.site/movie/love-season-1-web-dl-hindi-dd5-1-tamil-all-episodes</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
   <!-- Movie Download Mirror Indexes -->
   <url>
@@ -1689,6 +1695,12 @@
   </url>
   <url>
     <loc>https://cinemood.site/download/sardar-2-2026-ds4k-web-dl-hindi-dd5-1-tamil-dual-audio</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cinemood.site/download/love-season-1-web-dl-hindi-dd5-1-tamil-all-episodes</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
