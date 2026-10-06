@@ -2,6 +2,7 @@ export interface Movie {
   id: string | number;
   slug?: string;
   title: string;
+  heroTitle?: string;
   originalTitle?: string;
   tagline?: string;
   storyline: string;

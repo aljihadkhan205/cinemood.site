@@ -116,6 +116,7 @@ const MOVIES_DATABASE: Movie[] = [...(moviesData as any[])].reverse().map(item =
     
     // Original JSON database fields preserved for advanced details
     slug: item.slug || item.id,
+    heroTitle: item.heroTitle,
     fullTitle: item.fullTitle,
     description: item.description,
     genre: item.genre,

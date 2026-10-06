@@ -33,7 +33,10 @@ export const HeroSlider: React.FC = () => {
   const bannerTitle =
     currentMovie.id === "vishwanath-sons-2026" || currentMovie.title.startsWith("Vishwanath & Sons (2026)")
       ? "Vishwanath & Sons (2026)"
-      : currentMovie.title;
+      : currentMovie.id === "mushoku-tensei-jobless-reincarnation-2021-s03-s2-2-s2-1-s02-s01-hindi-dd5-1" ||
+        currentMovie.title.startsWith("Mushoku Tensei: Jobless Reincarnation (2021)")
+      ? "Mushoku Tensei: Jobless Reincarnation (2021)"
+      : (currentMovie as any).heroTitle || currentMovie.title;
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + featuredMovies.length) % featuredMovies.length);
