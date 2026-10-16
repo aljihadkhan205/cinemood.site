@@ -959,6 +959,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://cinemood.site/movie/maremma-2026-web-dl-hindi-dd2-0-telugu-dual-audio</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
   <!-- Movie Download Mirror Indexes -->
   <url>
@@ -1773,6 +1779,12 @@
   </url>
   <url>
     <loc>https://cinemood.site/download/pradhama-drishtiya-kuttakkar-2026-web-dl-malayalam-dd5-1</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cinemood.site/download/maremma-2026-web-dl-hindi-dd2-0-telugu-dual-audio</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
